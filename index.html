@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="h-screen"></div>
+    <div class="xl:w-[60%] md:w-[80%] w-[95%] mx-auto">
+      <section class="comparisonSection relative overflow-hidden">
+        <div class="comparisonImage w-full h-full beforeImage aspect-video">
+          <img
+            src="/assets/images/logo1.jpg"
+            alt="before"
+            class="w-full h-full absolute top-0 object-cover" />
+        </div>
+        <div class="comparisonImage w-full h-full afterImage aspect-video">
+          <img
+            src="/assets/images/logo2.jpg"
+            alt="after"
+            class="w-full h-full absolute top-0 object-cover" />
+        </div>
+        <div class="comparisonImage w-full h-full thirdImage aspect-video">
+          <img
+            src="/assets/images/logo3.jpg"
+            class="w-full h-full absolute top-0 object-cover"
+            alt="thirdone" />
+        </div>
+      </section>
+    </div>
+    <div class="h-screen"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
